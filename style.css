@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: green;
+    background-color: black;
+    font-family: "Press Start 2P";
+    overscroll-behavior: none;
+}
+
+.container{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    border: 1px solid white;
+}
+
+#score-text{
+    font-size: 25px;
+}
+
+.hide{
+    display: none;
+}
+
+.restart{
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 30px;
+}
+
+button{
+    padding: 30px 20px;
+    background-color: green;
+    font-family: "Press Start 2P";
+    display: none;
+}
+
+.up{
+    margin-bottom: 10px;
+}
+
+
+.two{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.title{
+    margin-top: 5%;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
+
+@media only screen and (max-width:900px)
+{
+    .board{
+        height:300px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+    #score-text{
+        font-size: 20px;
+    }
+    button:active{
+        opacity: 35%;
+    }
+    button{
+        transition: all 0.5s ease;
+    }
+    button{
+        display: block;
+    }
+}
