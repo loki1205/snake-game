@@ -38,6 +38,7 @@ function refresh(){
         mainAudio.pause();
         return;
     }
+    mainAudio.play();
     //board
     context.fillStyle = boardColor;
     context.fillRect(0, 0, board.width, board.height);
