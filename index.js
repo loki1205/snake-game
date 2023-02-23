@@ -25,10 +25,7 @@ window.onload = function(){
     context = board.getContext("2d");
     placeFood();
     document.addEventListener("keyup",changeDirection);
-    document.addEventListener('swiped-left', function(e) {
-        alert("swiped");
-      });
-    setInterval(refresh,1000/10);
+    setInterval(refresh,3000/10);
     gameBGM();
 }
 
